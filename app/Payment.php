@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Payment extends Model
 {
   use SoftDeletes;
+  protected $guarded = [];
   protected $dates = ['deleted_at'];
     //
 }
